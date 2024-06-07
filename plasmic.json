@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "files",
@@ -45,7 +45,8 @@
           }
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "jkU633o1Cz7HrJdwdxhVHk",
@@ -99,7 +100,8 @@
           }
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "ohDidvG9XsCeFumugENU3J",
@@ -499,7 +501,8 @@
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerBreadcrumb"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "9WZxc9ETCwDp4rSGaS5CbS",
@@ -676,6 +679,19 @@
             "modulePath": "Card.jsx"
           },
           "cssFilePath": "plasmic/dark_saa_s_landing_page/PlasmicCard.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "4wyMl17eEwGh",
+          "name": "Carousel",
+          "type": "managed",
+          "projectId": "9WZxc9ETCwDp4rSGaS5CbS",
+          "renderModuleFilePath": "plasmic/dark_saa_s_landing_page/PlasmicCarousel.jsx",
+          "importSpec": {
+            "modulePath": "Carousel.jsx"
+          },
+          "cssFilePath": "plasmic/dark_saa_s_landing_page/PlasmicCarousel.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         }
@@ -932,6 +948,11 @@
           "id": "5GlOn2fcWZsY",
           "name": "image",
           "filePath": "plasmic/dark_saa_s_landing_page/images/image.png"
+        },
+        {
+          "id": "MG8n0AfDxjf4",
+          "name": "image 2",
+          "filePath": "plasmic/dark_saa_s_landing_page/images/image2.png"
         }
       ],
       "indirect": false,

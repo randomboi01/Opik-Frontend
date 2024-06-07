@@ -16,20 +16,16 @@ import {
   createPlasmicElementProxy,
   deriveRenderOpts,
   ensureGlobalVariants,
-  generateOnMutateForSpec,
-  generateStateOnChangePropForCodeComponents,
-  generateStateValueProp,
+  generateStateOnChangeProp,
   hasVariant,
-  initializeCodeComponentStates,
   useCurrentUser,
   useDollarState
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import Navbar from "../../Navbar"; // plasmic-import: IOoV5s6kluYE/component
 import Button from "../../Button"; // plasmic-import: FAL88-jyCKI_/component
+import Carousel from "../../Carousel"; // plasmic-import: 4wyMl17eEwGh/component
 import Section from "../../Section"; // plasmic-import: rgiRB26vdynw/component
-import { SliderWrapper } from "@plasmicpkgs/react-slick";
-import { sliderHelpers as SliderWrapper_Helpers } from "@plasmicpkgs/react-slick";
 import ProductCard from "../../ProductCard"; // plasmic-import: uk8DALKjPq4h/component
 import DetailAbout from "../../DetailAbout"; // plasmic-import: pxLYCqXvhsbJ/component
 import PriceSection from "../../PriceSection"; // plasmic-import: 41kqAPsvXLdS/component
@@ -50,9 +46,8 @@ import logoHero4PngSdVbQfLwfhRx from "./images/logoHero4Png.png"; // plasmic-imp
 import diagramImgsvgQ1FncgyObWtR from "./images/diagramImgsvg.svg"; // plasmic-import: q1fncgyObWtR/picture
 import ellipseLeftpngDaTdzvPfd3Km from "./images/ellipseLeftpng.png"; // plasmic-import: DaTDZVPfd3Km/picture
 import ellipseRightpngSgGrYrno17Sl from "./images/ellipseRightpng.png"; // plasmic-import: sgGrYrno17SL/picture
-import image5GlOn2FcWZsY from "./images/image.png"; // plasmic-import: 5GlOn2fcWZsY/picture
-import galleri12PngAClWlTUXcpx from "./images/galleri12Png.png"; // plasmic-import: aCLWlT_uXcpx/picture
 import galleri11PngVaDql4Fl2CJm from "./images/galleri11Png.png"; // plasmic-import: vaDQL4FL2CJm/picture
+import galleri12PngAClWlTUXcpx from "./images/galleri12Png.png"; // plasmic-import: aCLWlT_uXcpx/picture
 import galleri13PngWkgXq3Il8A9X from "./images/galleri13Png.png"; // plasmic-import: wkgXQ3il8a9x/picture
 import galleri21PngJlXiCsj4FyLc from "./images/galleri21Png.png"; // plasmic-import: JlXICsj4fyLc/picture
 import galleri22PngN5SuSLmW9XmX from "./images/galleri22Png.png"; // plasmic-import: N5suSLmW9XmX/picture
@@ -86,12 +81,10 @@ function PlasmicHomepage__RenderFunc(props) {
   const stateSpecs = React.useMemo(
     () => [
       {
-        path: "sliderCarousel.currentSlide",
+        path: "carousel.hostlessSliderInitialSlide",
         type: "private",
         variableType: "number",
-        initFunc: ({ $props, $state, $queries, $ctx }) => 0,
-        refName: "sliderCarousel",
-        onMutate: generateOnMutateForSpec("currentSlide", SliderWrapper_Helpers)
+        initFunc: ({ $props, $state, $queries, $ctx }) => undefined
       }
     ],
 
@@ -506,156 +499,16 @@ function PlasmicHomepage__RenderFunc(props) {
             }}
           />
 
-          <Section
-            data-plasmic-name={"diagramSection"}
-            data-plasmic-override={overrides.diagramSection}
-            className={classNames("__wab_instance", sty.diagramSection)}
-            size={
-              hasVariant(globalVariants, "screen", "mobileOnly")
-                ? "mobile"
-                : undefined
-            }
-          >
-            {(() => {
-              const child$Props = {
-                arrows: false,
-                autoplay: true,
-                autoplaySpeed: 9,
-                beforeChange: generateStateOnChangePropForCodeComponents(
-                  $state,
-                  "currentSlide",
-                  ["sliderCarousel", "currentSlide"],
-                  SliderWrapper_Helpers
-                ),
-                centerMode: true,
-                className: classNames("__wab_instance", sty.sliderCarousel),
-                cssEase: "linear",
-                initialSlide: generateStateValueProp($state, [
-                  "sliderCarousel",
-                  "currentSlide"
-                ]),
-                ref: ref => {
-                  $refs["sliderCarousel"] = ref;
-                },
-                sliderScopeClassName: sty["sliderCarousel__slider"],
-                speed: 7000
-              };
-              initializeCodeComponentStates(
-                $state,
-                [
-                  {
-                    name: "currentSlide",
-                    plasmicStateName: "sliderCarousel.currentSlide"
-                  }
-                ],
+          <Carousel
+            data-plasmic-name={"carousel"}
+            data-plasmic-override={overrides.carousel}
+            className={classNames("__wab_instance", sty.carousel)}
+            onHostlessSliderInitialSlideChange={generateStateOnChangeProp(
+              $state,
+              ["carousel", "hostlessSliderInitialSlide"]
+            )}
+          />
 
-                [],
-                SliderWrapper_Helpers ?? {},
-                child$Props
-              );
-              return (
-                <SliderWrapper
-                  data-plasmic-name={"sliderCarousel"}
-                  data-plasmic-override={overrides.sliderCarousel}
-                  {...child$Props}
-                >
-                  <PlasmicImg__
-                    data-plasmic-name={"hos1"}
-                    data-plasmic-override={overrides.hos1}
-                    alt={""}
-                    className={classNames(sty.hos1, "hospital-images")}
-                    displayHeight={"15vw"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"none"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"67vw"}
-                    height={"15vw"}
-                    src={
-                      "https://static1.plasmic.app/components/react-slick/slide1.png"
-                    }
-                    width={"15vw"}
-                  />
-
-                  <PlasmicImg__
-                    data-plasmic-name={"hos3"}
-                    data-plasmic-override={overrides.hos3}
-                    alt={""}
-                    className={classNames(sty.hos3)}
-                    displayHeight={"15vw"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"30vh"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"260px"}
-                    displayWidth={"52vw"}
-                    src={{
-                      src: image5GlOn2FcWZsY,
-                      fullWidth: 267,
-                      fullHeight: 265,
-                      aspectRatio: undefined
-                    }}
-                  />
-
-                  <PlasmicImg__
-                    data-plasmic-name={"hos32"}
-                    data-plasmic-override={overrides.hos32}
-                    alt={""}
-                    className={classNames(sty.hos32)}
-                    displayHeight={"15vw"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"483px"}
-                    src={{
-                      src: galleri12PngAClWlTUXcpx,
-                      fullWidth: 700,
-                      fullHeight: 300,
-                      aspectRatio: undefined
-                    }}
-                  />
-
-                  <PlasmicImg__
-                    data-plasmic-name={"hos33"}
-                    data-plasmic-override={overrides.hos33}
-                    alt={""}
-                    className={classNames(sty.hos33)}
-                    displayHeight={"15vw"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"15vw"}
-                    src={{
-                      src: galleri12PngAClWlTUXcpx,
-                      fullWidth: 700,
-                      fullHeight: 300,
-                      aspectRatio: undefined
-                    }}
-                  />
-
-                  <PlasmicImg__
-                    data-plasmic-name={"hos34"}
-                    data-plasmic-override={overrides.hos34}
-                    alt={""}
-                    className={classNames(sty.hos34)}
-                    displayHeight={"15vw"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"15vw"}
-                    src={{
-                      src: galleri12PngAClWlTUXcpx,
-                      fullWidth: 700,
-                      fullHeight: 300,
-                      aspectRatio: undefined
-                    }}
-                  />
-                </SliderWrapper>
-              );
-            })()}
-          </Section>
           <Section
             data-plasmic-name={"deviceSection"}
             data-plasmic-override={overrides.deviceSection}
@@ -1311,13 +1164,7 @@ const PlasmicDescendants = {
     "headerHeroSection",
     "navbar",
     "h1",
-    "diagramSection",
-    "sliderCarousel",
-    "hos1",
-    "hos3",
-    "hos32",
-    "hos33",
-    "hos34",
+    "carousel",
     "deviceSection",
     "gallerySection",
     "productSection",
@@ -1332,22 +1179,7 @@ const PlasmicDescendants = {
   headerHeroSection: ["headerHeroSection", "navbar", "h1"],
   navbar: ["navbar"],
   h1: ["h1"],
-  diagramSection: [
-    "diagramSection",
-    "sliderCarousel",
-    "hos1",
-    "hos3",
-    "hos32",
-    "hos33",
-    "hos34"
-  ],
-
-  sliderCarousel: ["sliderCarousel", "hos1", "hos3", "hos32", "hos33", "hos34"],
-  hos1: ["hos1"],
-  hos3: ["hos3"],
-  hos32: ["hos32"],
-  hos33: ["hos33"],
-  hos34: ["hos34"],
+  carousel: ["carousel"],
   deviceSection: ["deviceSection"],
   gallerySection: ["gallerySection"],
   productSection: ["productSection"],
@@ -1394,13 +1226,7 @@ export const PlasmicHomepage = Object.assign(
     headerHeroSection: makeNodeComponent("headerHeroSection"),
     navbar: makeNodeComponent("navbar"),
     h1: makeNodeComponent("h1"),
-    diagramSection: makeNodeComponent("diagramSection"),
-    sliderCarousel: makeNodeComponent("sliderCarousel"),
-    hos1: makeNodeComponent("hos1"),
-    hos3: makeNodeComponent("hos3"),
-    hos32: makeNodeComponent("hos32"),
-    hos33: makeNodeComponent("hos33"),
-    hos34: makeNodeComponent("hos34"),
+    carousel: makeNodeComponent("carousel"),
     deviceSection: makeNodeComponent("deviceSection"),
     gallerySection: makeNodeComponent("gallerySection"),
     productSection: makeNodeComponent("productSection"),
