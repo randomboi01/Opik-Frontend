@@ -16,10 +16,7 @@ import {
   createPlasmicElementProxy,
   deriveRenderOpts,
   ensureGlobalVariants,
-  generateStateOnChangeProp,
-  hasVariant,
-  useCurrentUser,
-  useDollarState
+  hasVariant
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import Navbar from "../../Navbar"; // plasmic-import: IOoV5s6kluYE/component
@@ -77,25 +74,6 @@ function PlasmicHomepage__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const currentUser = useCurrentUser?.() || {};
-  const stateSpecs = React.useMemo(
-    () => [
-      {
-        path: "carousel.hostlessSliderInitialSlide",
-        type: "private",
-        variableType: "number",
-        initFunc: ({ $props, $state, $queries, $ctx }) => undefined
-      }
-    ],
-
-    [$props, $ctx, $refs]
-  );
-  const $state = useDollarState(stateSpecs, {
-    $props,
-    $ctx,
-    $queries: {},
-    $refs
-  });
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariants_5FfeMn0I1Ziv()
   });
@@ -503,10 +481,6 @@ function PlasmicHomepage__RenderFunc(props) {
             data-plasmic-name={"carousel"}
             data-plasmic-override={overrides.carousel}
             className={classNames("__wab_instance", sty.carousel)}
-            onHostlessSliderInitialSlideChange={generateStateOnChangeProp(
-              $state,
-              ["carousel", "hostlessSliderInitialSlide"]
-            )}
           />
 
           <Section
@@ -540,7 +514,7 @@ function PlasmicHomepage__RenderFunc(props) {
               >
                 {hasVariant(globalVariants, "screen", "mobileOnly")
                   ? "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do \neiusmod tempor incididunt ut labore et dolore magna aliqua."
-                  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do \neiusmod tempor incididunt ut labore et dolore magna aliqua."}
+                  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do \neiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget velit in nisl condimentum congue non ac tellus. Pellentesque enim nunc, ullamcorper at arcu ac, efficitur aliquam libero. Mauris vitae fringilla neque. Ut rutrum turpis erat, eu tempor mauris iaculis ac. In hac habitasse platea dictumst. Suspendisse potenti. Mauris sit.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget velit in nisl condimentum congue non ac tellus. Pellentesque enim nunc, ullamcorper at arcu ac, efficitur aliquam libero. Mauris vitae fringilla neque. Ut rutrum turpis erat, eu tempor mauris iaculis ac. In hac habitasse platea dictumst. Suspendisse potenti. Mauris sit.\n.............."}
               </div>
             </div>
           </Section>

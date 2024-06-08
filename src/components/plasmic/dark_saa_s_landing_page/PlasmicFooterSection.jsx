@@ -14,8 +14,7 @@ import {
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
-  ensureGlobalVariants,
-  useCurrentUser
+  ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import Logo from "../../Logo"; // plasmic-import: T9gpS9Fk8hi0/component
@@ -49,7 +48,6 @@ function PlasmicFooterSection__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const currentUser = useCurrentUser?.() || {};
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariants_5FfeMn0I1Ziv()
   });

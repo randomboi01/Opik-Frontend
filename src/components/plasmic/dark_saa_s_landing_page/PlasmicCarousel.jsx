@@ -11,7 +11,6 @@
 import * as React from "react";
 import {
   PlasmicImg as PlasmicImg__,
-  PlasmicLink as PlasmicLink__,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
@@ -21,7 +20,6 @@ import {
   generateStateValueProp,
   hasVariant,
   initializeCodeComponentStates,
-  useCurrentUser,
   useDollarState
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
@@ -33,15 +31,12 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: 9WZxc9ETCwDp4rSGaS5CbS/projectcss
 import sty from "./PlasmicCarousel.module.css"; // plasmic-import: 4wyMl17eEwGh/css
 import image2Mg8N0AfDxjf4 from "./images/image2.png"; // plasmic-import: MG8n0AfDxjf4/picture
-import image5GlOn2FcWZsY from "./images/image.png"; // plasmic-import: 5GlOn2fcWZsY/picture
 
 createPlasmicElementProxy;
 
 export const PlasmicCarousel__VariantProps = new Array();
 
-export const PlasmicCarousel__ArgProps = new Array(
-  "onHostlessSliderInitialSlideChange"
-);
+export const PlasmicCarousel__ArgProps = new Array();
 
 const $$ = {};
 
@@ -55,15 +50,13 @@ function PlasmicCarousel__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const currentUser = useCurrentUser?.() || {};
   const stateSpecs = React.useMemo(
     () => [
       {
         path: "sliderCarousel.currentSlide",
-        type: "readonly",
+        type: "private",
         variableType: "number",
         initFunc: ({ $props, $state, $queries, $ctx }) => 0,
-        onChangeProp: "onHostlessSliderInitialSlideChange",
         refName: "sliderCarousel",
         onMutate: generateOnMutateForSpec("currentSlide", SliderWrapper_Helpers)
       }
@@ -93,186 +86,276 @@ function PlasmicCarousel__RenderFunc(props) {
           : undefined
       }
     >
-      {(() => {
-        const child$Props = {
-          arrows: false,
-          autoplay: true,
-          autoplaySpeed: 9,
-          beforeChange: generateStateOnChangePropForCodeComponents(
+      <div className={classNames(projectcss.all, sty.freeBox__gjF9Y)}>
+        <h1
+          data-plasmic-name={"h1"}
+          data-plasmic-override={overrides.h1}
+          className={classNames(
+            projectcss.all,
+            projectcss.h1,
+            projectcss.__wab_text,
+            sty.h1
+          )}
+        >
+          {"Our Partners"}
+        </h1>
+        {(() => {
+          const child$Props = {
+            arrowColor: "#000000",
+            autoplay: true,
+            autoplaySpeed: 1000,
+            beforeChange: generateStateOnChangePropForCodeComponents(
+              $state,
+              "currentSlide",
+              ["sliderCarousel", "currentSlide"],
+              SliderWrapper_Helpers
+            ),
+            centerMode: true,
+            className: classNames("__wab_instance", sty.sliderCarousel),
+            fade: false,
+            initialSlide: generateStateValueProp($state, [
+              "sliderCarousel",
+              "currentSlide"
+            ]),
+            pauseOnHover: false,
+            ref: ref => {
+              $refs["sliderCarousel"] = ref;
+            },
+            sliderScopeClassName: sty["sliderCarousel__slider"],
+            slidesPerRow: 3
+          };
+          initializeCodeComponentStates(
             $state,
-            "currentSlide",
-            ["sliderCarousel", "currentSlide"],
-            SliderWrapper_Helpers
-          ),
-          centerMode: true,
-          className: classNames("__wab_instance", sty.sliderCarousel),
-          cssEase: "linear",
-          initialSlide: generateStateValueProp($state, [
-            "sliderCarousel",
-            "currentSlide"
-          ]),
-          ref: ref => {
-            $refs["sliderCarousel"] = ref;
-          },
-          sliderScopeClassName: sty["sliderCarousel__slider"],
-          speed: 7000
-        };
-        initializeCodeComponentStates(
-          $state,
-          [
-            {
-              name: "currentSlide",
-              plasmicStateName: "sliderCarousel.currentSlide"
-            }
-          ],
+            [
+              {
+                name: "currentSlide",
+                plasmicStateName: "sliderCarousel.currentSlide"
+              }
+            ],
 
-          [],
-          SliderWrapper_Helpers ?? {},
-          child$Props
-        );
-        return (
-          <SliderWrapper
-            data-plasmic-name={"sliderCarousel"}
-            data-plasmic-override={overrides.sliderCarousel}
-            {...child$Props}
-          >
-            <PlasmicLink__
-              data-plasmic-name={"link"}
-              data-plasmic-override={overrides.link}
-              className={classNames(projectcss.all, projectcss.a, sty.link)}
-              platform={"react"}
+            [],
+            SliderWrapper_Helpers ?? {},
+            child$Props
+          );
+          return (
+            <SliderWrapper
+              data-plasmic-name={"sliderCarousel"}
+              data-plasmic-override={overrides.sliderCarousel}
+              {...child$Props}
             >
-              <PlasmicImg__
-                data-plasmic-name={"hos1"}
-                data-plasmic-override={overrides.hos1}
-                alt={""}
-                className={classNames(sty.hos1, "hospital-images")}
-                displayHeight={"15vw"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"15vw"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={"50vw"}
-                height={"15vw"}
-                src={{
-                  src: image2Mg8N0AfDxjf4,
-                  fullWidth: 270,
-                  fullHeight: 270,
-                  aspectRatio: undefined
-                }}
-                width={"15vw"}
-              />
-            </PlasmicLink__>
-            <PlasmicImg__
-              data-plasmic-name={"hos3"}
-              data-plasmic-override={overrides.hos3}
-              alt={""}
-              className={classNames(sty.hos3)}
-              displayHeight={"15vw"}
-              displayMaxHeight={"none"}
-              displayMaxWidth={"15vw"}
-              displayMinHeight={"0"}
-              displayMinWidth={"260px"}
-              displayWidth={"52vw"}
-              src={{
-                src: image5GlOn2FcWZsY,
-                fullWidth: 267,
-                fullHeight: 265,
-                aspectRatio: undefined
-              }}
-            />
-
-            <PlasmicImg__
-              data-plasmic-name={"hos32"}
-              data-plasmic-override={overrides.hos32}
-              alt={""}
-              className={classNames(sty.hos32)}
-              displayHeight={"15vw"}
-              displayMaxHeight={"none"}
-              displayMaxWidth={"100%"}
-              displayMinHeight={"0"}
-              displayMinWidth={"0"}
-              displayWidth={"483px"}
-              src={{
-                src: image2Mg8N0AfDxjf4,
-                fullWidth: 270,
-                fullHeight: 270,
-                aspectRatio: undefined
-              }}
-            />
-
-            <PlasmicImg__
-              data-plasmic-name={"hos33"}
-              data-plasmic-override={overrides.hos33}
-              alt={""}
-              className={classNames(sty.hos33)}
-              displayHeight={"15vw"}
-              displayMaxHeight={"none"}
-              displayMaxWidth={"100%"}
-              displayMinHeight={"0"}
-              displayMinWidth={"0"}
-              displayWidth={"15vw"}
-              src={{
-                src: image2Mg8N0AfDxjf4,
-                fullWidth: 270,
-                fullHeight: 270,
-                aspectRatio: undefined
-              }}
-            />
-
-            <PlasmicImg__
-              data-plasmic-name={"hos34"}
-              data-plasmic-override={overrides.hos34}
-              alt={""}
-              className={classNames(sty.hos34)}
-              displayHeight={"15vw"}
-              displayMaxHeight={"none"}
-              displayMaxWidth={"100%"}
-              displayMinHeight={"0"}
-              displayMinWidth={"0"}
-              displayWidth={"15vw"}
-              src={{
-                src: image2Mg8N0AfDxjf4,
-                fullWidth: 270,
-                fullHeight: 270,
-                aspectRatio: undefined
-              }}
-            />
-          </SliderWrapper>
-        );
-      })()}
+              <div className={classNames(projectcss.all, sty.freeBox__wbhgI)}>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img___4E462)}
+                  displayHeight={"368px"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  src={
+                    "https://static1.plasmic.app/components/react-slick/slide1.png"
+                  }
+                />
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__xGePh)}>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__bhd3L)}
+                  displayHeight={"368px"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  src={
+                    "https://static1.plasmic.app/components/react-slick/slide2.png"
+                  }
+                />
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__qz7Pm)}>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__lrEdn)}
+                  displayHeight={"368px"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  src={
+                    "https://static1.plasmic.app/components/react-slick/slide3.png"
+                  }
+                />
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox___5UGAd)}>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__rQNgK)}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "368px"
+                      : "368px"
+                  }
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "100%"
+                      : "100%"
+                  }
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  src={{
+                    src: image2Mg8N0AfDxjf4,
+                    fullWidth: 270,
+                    fullHeight: 270,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__nrhoq)}>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__zecj1)}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "368px"
+                      : "368px"
+                  }
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "100%"
+                      : "100%"
+                  }
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  src={{
+                    src: image2Mg8N0AfDxjf4,
+                    fullWidth: 270,
+                    fullHeight: 270,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__uiZ5G)}>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__ryEjU)}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "368px"
+                      : "368px"
+                  }
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "100%"
+                      : "100%"
+                  }
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  src={{
+                    src: image2Mg8N0AfDxjf4,
+                    fullWidth: 270,
+                    fullHeight: 270,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__rlhzl)}>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__dqeBx)}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "368px"
+                      : "368px"
+                  }
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "100%"
+                      : "100%"
+                  }
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  src={{
+                    src: image2Mg8N0AfDxjf4,
+                    fullWidth: 270,
+                    fullHeight: 270,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__tTaL)}>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__fueot)}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "368px"
+                      : "368px"
+                  }
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "100%"
+                      : "100%"
+                  }
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  src={{
+                    src: image2Mg8N0AfDxjf4,
+                    fullWidth: 270,
+                    fullHeight: 270,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__rsOx)}>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__ycLPm)}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "368px"
+                      : "368px"
+                  }
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "100%"
+                      : "100%"
+                  }
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  src={{
+                    src: image2Mg8N0AfDxjf4,
+                    fullWidth: 270,
+                    fullHeight: 270,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
+            </SliderWrapper>
+          );
+        })()}
+      </div>
     </Section>
   );
 }
 
 const PlasmicDescendants = {
-  carouselBody: [
-    "carouselBody",
-    "sliderCarousel",
-    "link",
-    "hos1",
-    "hos3",
-    "hos32",
-    "hos33",
-    "hos34"
-  ],
-
-  sliderCarousel: [
-    "sliderCarousel",
-    "link",
-    "hos1",
-    "hos3",
-    "hos32",
-    "hos33",
-    "hos34"
-  ],
-
-  link: ["link", "hos1"],
-  hos1: ["hos1"],
-  hos3: ["hos3"],
-  hos32: ["hos32"],
-  hos33: ["hos33"],
-  hos34: ["hos34"]
+  carouselBody: ["carouselBody", "h1", "sliderCarousel"],
+  h1: ["h1"],
+  sliderCarousel: ["sliderCarousel"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -307,13 +390,8 @@ export const PlasmicCarousel = Object.assign(
   makeNodeComponent("carouselBody"),
   {
     // Helper components rendering sub-elements
+    h1: makeNodeComponent("h1"),
     sliderCarousel: makeNodeComponent("sliderCarousel"),
-    link: makeNodeComponent("link"),
-    hos1: makeNodeComponent("hos1"),
-    hos3: makeNodeComponent("hos3"),
-    hos32: makeNodeComponent("hos32"),
-    hos33: makeNodeComponent("hos33"),
-    hos34: makeNodeComponent("hos34"),
     // Metadata about props expected for PlasmicCarousel
     internalVariantProps: PlasmicCarousel__VariantProps,
     internalArgProps: PlasmicCarousel__ArgProps

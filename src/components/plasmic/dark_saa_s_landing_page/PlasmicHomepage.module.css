@@ -402,6 +402,7 @@
   margin-left: 4px;
   width: 100%;
   min-width: 661px;
+  margin-right: 15px;
 }
 .img__tFghk > picture > img {
   object-fit: cover;
@@ -587,6 +588,12 @@
 }
 .carousel:global(.__wab_instance):global(.__wab_instance) {
   position: relative;
+  flex-shrink: 0;
+}
+@media (min-width: 0px) and (max-width: 930px) {
+  .carousel:global(.__wab_instance):global(.__wab_instance) {
+    flex-shrink: 0;
+  }
 }
 .deviceSection:global(.__wab_instance) {
   max-width: 100%;
@@ -610,7 +617,7 @@
   height: auto;
   max-width: 100%;
   min-width: 0;
-  padding: 0px 8px 388px;
+  padding: 0px 8px 9px;
 }
 @media (min-width: 0px) and (max-width: 930px) {
   .freeBox__sLGze {

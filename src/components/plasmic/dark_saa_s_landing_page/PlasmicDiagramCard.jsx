@@ -14,8 +14,7 @@ import {
   createPlasmicElementProxy,
   deriveRenderOpts,
   ensureGlobalVariants,
-  hasVariant,
-  useCurrentUser
+  hasVariant
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import { useScreenVariants as useScreenVariants_5FfeMn0I1Ziv } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 5FfeMN0i1Ziv/globalVariant
@@ -43,7 +42,6 @@ function PlasmicDiagramCard__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const currentUser = useCurrentUser?.() || {};
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariants_5FfeMn0I1Ziv()
   });

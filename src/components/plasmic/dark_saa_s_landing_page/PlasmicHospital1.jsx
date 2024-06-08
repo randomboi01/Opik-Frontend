@@ -12,8 +12,7 @@ import * as React from "react";
 import {
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts,
-  useCurrentUser
+  deriveRenderOpts
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import { RichList } from "@plasmicpkgs/plasmic-rich-components/skinny/rich-list";
@@ -41,7 +40,6 @@ function PlasmicHospital1__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const currentUser = useCurrentUser?.() || {};
   return (
     <RichList
       data-plasmic-name={"root"}
