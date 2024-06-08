@@ -159,9 +159,12 @@ function PlasmicCarousel__RenderFunc(props) {
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
                   displayWidth={"auto"}
-                  src={
-                    "https://static1.plasmic.app/components/react-slick/slide1.png"
-                  }
+                  src={{
+                    src: image2Mg8N0AfDxjf4,
+                    fullWidth: 270,
+                    fullHeight: 270,
+                    aspectRatio: undefined
+                  }}
                 />
               </div>
               <div className={classNames(projectcss.all, sty.freeBox__xGePh)}>
@@ -182,9 +185,12 @@ function PlasmicCarousel__RenderFunc(props) {
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
                   displayWidth={"auto"}
-                  src={
-                    "https://static1.plasmic.app/components/react-slick/slide2.png"
-                  }
+                  src={{
+                    src: image2Mg8N0AfDxjf4,
+                    fullWidth: 270,
+                    fullHeight: 270,
+                    aspectRatio: undefined
+                  }}
                 />
               </div>
               <div className={classNames(projectcss.all, sty.freeBox__qz7Pm)}>
@@ -205,9 +211,12 @@ function PlasmicCarousel__RenderFunc(props) {
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
                   displayWidth={"auto"}
-                  src={
-                    "https://static1.plasmic.app/components/react-slick/slide3.png"
-                  }
+                  src={{
+                    src: image2Mg8N0AfDxjf4,
+                    fullWidth: 270,
+                    fullHeight: 270,
+                    aspectRatio: undefined
+                  }}
                 />
               </div>
               <div className={classNames(projectcss.all, sty.freeBox___5UGAd)}>
