@@ -126,7 +126,7 @@ function PlasmicHomepage__RenderFunc(props) {
                       sty.h1
                     )}
                   >
-                    {hasVariant(globalVariants, "screen", "mobileOnly")
+                    {hasVariant(globalVariants, "screen", "tabletsOnly")
                       ? "Analytics for developers can be better"
                       : "Analytics for \ndevelopers can\nbe better"}
                   </h1>
@@ -137,7 +137,7 @@ function PlasmicHomepage__RenderFunc(props) {
                       sty.text__zJsq5
                     )}
                   >
-                    {hasVariant(globalVariants, "screen", "mobileOnly")
+                    {hasVariant(globalVariants, "screen", "tabletsOnly")
                       ? "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                       : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
                   </div>
@@ -152,7 +152,7 @@ function PlasmicHomepage__RenderFunc(props) {
                         sty.button__v5Nzo
                       )}
                       color={
-                        hasVariant(globalVariants, "screen", "mobileOnly")
+                        hasVariant(globalVariants, "screen", "tabletsOnly")
                           ? "blueSmall"
                           : "blue"
                       }
@@ -182,7 +182,7 @@ function PlasmicHomepage__RenderFunc(props) {
                           sty.text__uf2EG
                         )}
                       >
-                        {hasVariant(globalVariants, "screen", "mobileOnly")
+                        {hasVariant(globalVariants, "screen", "tabletsOnly")
                           ? "Try Demo For Free"
                           : "Try Demo For Free"}
                       </div>
@@ -190,7 +190,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     <Button
                       className={classNames("__wab_instance", sty.button__pUf4)}
                       color={
-                        hasVariant(globalVariants, "screen", "mobileOnly")
+                        hasVariant(globalVariants, "screen", "tabletsOnly")
                           ? "blueBorderSmall"
                           : "blueBorder"
                       }
@@ -216,14 +216,14 @@ function PlasmicHomepage__RenderFunc(props) {
                           sty.text__eeXop
                         )}
                       >
-                        {hasVariant(globalVariants, "screen", "mobileOnly")
+                        {hasVariant(globalVariants, "screen", "tabletsOnly")
                           ? "Learn More"
                           : "Learn More"}
                       </div>
                     </Button>
                   </Stack__>
                   {(
-                    hasVariant(globalVariants, "screen", "mobileOnly")
+                    hasVariant(globalVariants, "screen", "tabletsOnly")
                       ? true
                       : false
                   ) ? (
@@ -298,12 +298,12 @@ function PlasmicHomepage__RenderFunc(props) {
                     displayMaxWidth={"none"}
                     displayMinHeight={"0"}
                     displayMinWidth={
-                      hasVariant(globalVariants, "screen", "mobileOnly")
+                      hasVariant(globalVariants, "screen", "tabletsOnly")
                         ? "0px"
                         : "661px"
                     }
                     displayWidth={
-                      hasVariant(globalVariants, "screen", "mobileOnly")
+                      hasVariant(globalVariants, "screen", "tabletsOnly")
                         ? "100%"
                         : "100%"
                     }
@@ -324,7 +324,7 @@ function PlasmicHomepage__RenderFunc(props) {
                   sty.text__h3Hms
                 )}
               >
-                {hasVariant(globalVariants, "screen", "mobileOnly")
+                {hasVariant(globalVariants, "screen", "tabletsOnly")
                   ? "Powering with magnificant of Companies"
                   : "Powering with magnificant of Companies"}
               </div>
@@ -339,7 +339,7 @@ function PlasmicHomepage__RenderFunc(props) {
                   displayHeight={"auto"}
                   displayMaxHeight={"none"}
                   displayMaxWidth={
-                    hasVariant(globalVariants, "screen", "mobileOnly")
+                    hasVariant(globalVariants, "screen", "tabletsOnly")
                       ? "170px"
                       : "100%"
                   }
@@ -361,7 +361,7 @@ function PlasmicHomepage__RenderFunc(props) {
                   displayHeight={"auto"}
                   displayMaxHeight={"none"}
                   displayMaxWidth={
-                    hasVariant(globalVariants, "screen", "mobileOnly")
+                    hasVariant(globalVariants, "screen", "tabletsOnly")
                       ? "170px"
                       : "100%"
                   }
@@ -383,7 +383,7 @@ function PlasmicHomepage__RenderFunc(props) {
                   displayHeight={"auto"}
                   displayMaxHeight={"none"}
                   displayMaxWidth={
-                    hasVariant(globalVariants, "screen", "mobileOnly")
+                    hasVariant(globalVariants, "screen", "tabletsOnly")
                       ? "170px"
                       : "100%"
                   }
@@ -405,7 +405,7 @@ function PlasmicHomepage__RenderFunc(props) {
                   displayHeight={"auto"}
                   displayMaxHeight={"none"}
                   displayMaxWidth={
-                    hasVariant(globalVariants, "screen", "mobileOnly")
+                    hasVariant(globalVariants, "screen", "tabletsOnly")
                       ? "170px"
                       : "100%"
                   }
@@ -489,7 +489,7 @@ function PlasmicHomepage__RenderFunc(props) {
             background={"dark"}
             className={classNames("__wab_instance", sty.deviceSection)}
             size={
-              hasVariant(globalVariants, "screen", "mobileOnly")
+              hasVariant(globalVariants, "screen", "tabletsOnly")
                 ? "mobile"
                 : undefined
             }
@@ -512,7 +512,7 @@ function PlasmicHomepage__RenderFunc(props) {
                   sty.text__rh5E5
                 )}
               >
-                {hasVariant(globalVariants, "screen", "mobileOnly")
+                {hasVariant(globalVariants, "screen", "tabletsOnly")
                   ? "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do \neiusmod tempor incididunt ut labore et dolore magna aliqua."
                   : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do \neiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget velit in nisl condimentum congue non ac tellus. Pellentesque enim nunc, ullamcorper at arcu ac, efficitur aliquam libero. Mauris vitae fringilla neque. Ut rutrum turpis erat, eu tempor mauris iaculis ac. In hac habitasse platea dictumst. Suspendisse potenti. Mauris sit.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget velit in nisl condimentum congue non ac tellus. Pellentesque enim nunc, ullamcorper at arcu ac, efficitur aliquam libero. Mauris vitae fringilla neque. Ut rutrum turpis erat, eu tempor mauris iaculis ac. In hac habitasse platea dictumst. Suspendisse potenti. Mauris sit.\n.............."}
               </div>
@@ -650,7 +650,7 @@ function PlasmicHomepage__RenderFunc(props) {
             data-plasmic-override={overrides.productSection}
             className={classNames("__wab_instance", sty.productSection)}
             size={
-              hasVariant(globalVariants, "screen", "mobileOnly")
+              hasVariant(globalVariants, "screen", "tabletsOnly")
                 ? "mobile"
                 : undefined
             }
@@ -680,7 +680,7 @@ function PlasmicHomepage__RenderFunc(props) {
               <Button
                 className={classNames("__wab_instance", sty.button__xqz7Z)}
                 color={
-                  hasVariant(globalVariants, "screen", "mobileOnly")
+                  hasVariant(globalVariants, "screen", "tabletsOnly")
                     ? "blue"
                     : "blue"
                 }
@@ -706,7 +706,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     sty.text__vB7F
                   )}
                 >
-                  {hasVariant(globalVariants, "screen", "mobileOnly")
+                  {hasVariant(globalVariants, "screen", "tabletsOnly")
                     ? "Get Started"
                     : "Get Started"}
                 </div>
@@ -757,7 +757,7 @@ function PlasmicHomepage__RenderFunc(props) {
             background={"dark"}
             className={classNames("__wab_instance", sty.aboutSection)}
             size={
-              hasVariant(globalVariants, "screen", "mobileOnly")
+              hasVariant(globalVariants, "screen", "tabletsOnly")
                 ? "mobile"
                 : undefined
             }
@@ -771,7 +771,7 @@ function PlasmicHomepage__RenderFunc(props) {
                   sty.h2__tp2Rs
                 )}
               >
-                {hasVariant(globalVariants, "screen", "mobileOnly")
+                {hasVariant(globalVariants, "screen", "tabletsOnly")
                   ? "What people say \nabout us"
                   : "What people say about us"}
               </h2>
@@ -783,7 +783,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     displayHeight={"auto"}
                     displayMaxHeight={"none"}
                     displayMaxWidth={
-                      hasVariant(globalVariants, "screen", "mobileOnly")
+                      hasVariant(globalVariants, "screen", "tabletsOnly")
                         ? "339px"
                         : "100%"
                     }
@@ -838,7 +838,7 @@ function PlasmicHomepage__RenderFunc(props) {
                         sty.text___70YJv
                       )}
                     >
-                      {hasVariant(globalVariants, "screen", "mobileOnly")
+                      {hasVariant(globalVariants, "screen", "tabletsOnly")
                         ? "CEO Company"
                         : "CEO Company"}
                     </div>
@@ -855,7 +855,7 @@ function PlasmicHomepage__RenderFunc(props) {
                       displayMinHeight={"0"}
                       displayMinWidth={"0"}
                       displayWidth={
-                        hasVariant(globalVariants, "screen", "mobileOnly")
+                        hasVariant(globalVariants, "screen", "tabletsOnly")
                           ? "auto"
                           : "auto"
                       }
@@ -875,7 +875,7 @@ function PlasmicHomepage__RenderFunc(props) {
                       sty.text___5RnZg
                     )}
                   >
-                    {hasVariant(globalVariants, "screen", "mobileOnly")
+                    {hasVariant(globalVariants, "screen", "tabletsOnly")
                       ? "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                       : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
                   </div>
@@ -1013,7 +1013,7 @@ function PlasmicHomepage__RenderFunc(props) {
                       sty.h3
                     )}
                   >
-                    {hasVariant(globalVariants, "screen", "mobileOnly")
+                    {hasVariant(globalVariants, "screen", "tabletsOnly")
                       ? "Start using our product today"
                       : "Start using our product today"}
                   </h3>
@@ -1024,7 +1024,7 @@ function PlasmicHomepage__RenderFunc(props) {
                       sty.text__xZMx
                     )}
                   >
-                    {hasVariant(globalVariants, "screen", "mobileOnly")
+                    {hasVariant(globalVariants, "screen", "tabletsOnly")
                       ? "Faster than free analytics tools. Access to all your data, with respect to the privacy of your users."
                       : "Faster than free analytics tools. Access to all your data, with respect to the privacy of your users."}
                   </div>
@@ -1055,7 +1055,7 @@ function PlasmicHomepage__RenderFunc(props) {
                         sty.text__lzFoD
                       )}
                     >
-                      {hasVariant(globalVariants, "screen", "mobileOnly")
+                      {hasVariant(globalVariants, "screen", "tabletsOnly")
                         ? "Get Started"
                         : "Get Started"}
                     </div>
@@ -1103,7 +1103,7 @@ function PlasmicHomepage__RenderFunc(props) {
                         sty.text__izQRc
                       )}
                     >
-                      {hasVariant(globalVariants, "screen", "mobileOnly")
+                      {hasVariant(globalVariants, "screen", "tabletsOnly")
                         ? "We Recommended"
                         : "We Recommended"}
                     </div>

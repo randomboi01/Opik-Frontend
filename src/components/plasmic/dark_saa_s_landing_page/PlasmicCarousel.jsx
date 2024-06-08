@@ -81,7 +81,7 @@ function PlasmicCarousel__RenderFunc(props) {
       data-plasmic-for-node={forNode}
       className={classNames("__wab_instance", sty.carouselBody)}
       size={
-        hasVariant(globalVariants, "screen", "mobileOnly")
+        hasVariant(globalVariants, "screen", "tabletsOnly")
           ? "mobile"
           : undefined
       }
@@ -122,7 +122,9 @@ function PlasmicCarousel__RenderFunc(props) {
               $refs["sliderCarousel"] = ref;
             },
             sliderScopeClassName: sty["sliderCarousel__slider"],
-            slidesPerRow: 3
+            slidesPerRow: hasVariant(globalVariants, "screen", "mobileOnly")
+              ? 1
+              : 3
           };
           initializeCodeComponentStates(
             $state,
@@ -147,7 +149,11 @@ function PlasmicCarousel__RenderFunc(props) {
                 <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img___4E462)}
-                  displayHeight={"368px"}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "250px"
+                      : "368px"
+                  }
                   displayMaxHeight={"none"}
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
@@ -162,9 +168,17 @@ function PlasmicCarousel__RenderFunc(props) {
                 <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img__bhd3L)}
-                  displayHeight={"368px"}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "250px"
+                      : "368px"
+                  }
                   displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
+                  displayMaxWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "100%"
+                      : "100%"
+                  }
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
                   displayWidth={"auto"}
@@ -177,9 +191,17 @@ function PlasmicCarousel__RenderFunc(props) {
                 <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img__lrEdn)}
-                  displayHeight={"368px"}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "250px"
+                      : "368px"
+                  }
                   displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
+                  displayMaxWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "100%"
+                      : "100%"
+                  }
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
                   displayWidth={"auto"}
@@ -194,12 +216,16 @@ function PlasmicCarousel__RenderFunc(props) {
                   className={classNames(sty.img__rQNgK)}
                   displayHeight={
                     hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "250px"
+                      : hasVariant(globalVariants, "screen", "tabletsOnly")
                       ? "368px"
                       : "368px"
                   }
                   displayMaxHeight={"none"}
                   displayMaxWidth={
                     hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "100%"
+                      : hasVariant(globalVariants, "screen", "tabletsOnly")
                       ? "100%"
                       : "100%"
                   }
@@ -220,12 +246,16 @@ function PlasmicCarousel__RenderFunc(props) {
                   className={classNames(sty.img__zecj1)}
                   displayHeight={
                     hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "250px"
+                      : hasVariant(globalVariants, "screen", "tabletsOnly")
                       ? "368px"
                       : "368px"
                   }
                   displayMaxHeight={"none"}
                   displayMaxWidth={
                     hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "100%"
+                      : hasVariant(globalVariants, "screen", "tabletsOnly")
                       ? "100%"
                       : "100%"
                   }
@@ -246,12 +276,16 @@ function PlasmicCarousel__RenderFunc(props) {
                   className={classNames(sty.img__ryEjU)}
                   displayHeight={
                     hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "250px"
+                      : hasVariant(globalVariants, "screen", "tabletsOnly")
                       ? "368px"
                       : "368px"
                   }
                   displayMaxHeight={"none"}
                   displayMaxWidth={
                     hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "100%"
+                      : hasVariant(globalVariants, "screen", "tabletsOnly")
                       ? "100%"
                       : "100%"
                   }
@@ -272,12 +306,16 @@ function PlasmicCarousel__RenderFunc(props) {
                   className={classNames(sty.img__dqeBx)}
                   displayHeight={
                     hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "250px"
+                      : hasVariant(globalVariants, "screen", "tabletsOnly")
                       ? "368px"
                       : "368px"
                   }
                   displayMaxHeight={"none"}
                   displayMaxWidth={
                     hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "100%"
+                      : hasVariant(globalVariants, "screen", "tabletsOnly")
                       ? "100%"
                       : "100%"
                   }
@@ -298,12 +336,16 @@ function PlasmicCarousel__RenderFunc(props) {
                   className={classNames(sty.img__fueot)}
                   displayHeight={
                     hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "250px"
+                      : hasVariant(globalVariants, "screen", "tabletsOnly")
                       ? "368px"
                       : "368px"
                   }
                   displayMaxHeight={"none"}
                   displayMaxWidth={
                     hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "100%"
+                      : hasVariant(globalVariants, "screen", "tabletsOnly")
                       ? "100%"
                       : "100%"
                   }
@@ -324,12 +366,16 @@ function PlasmicCarousel__RenderFunc(props) {
                   className={classNames(sty.img__ycLPm)}
                   displayHeight={
                     hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "250px"
+                      : hasVariant(globalVariants, "screen", "tabletsOnly")
                       ? "368px"
                       : "368px"
                   }
                   displayMaxHeight={"none"}
                   displayMaxWidth={
                     hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "100%"
+                      : hasVariant(globalVariants, "screen", "tabletsOnly")
                       ? "100%"
                       : "100%"
                   }

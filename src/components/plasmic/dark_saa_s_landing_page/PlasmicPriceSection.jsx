@@ -97,7 +97,7 @@ function PlasmicPriceSection__RenderFunc(props) {
         <div className={classNames(projectcss.all, sty.freeBox__kaT81)}>
           <PriceCard
             borders={
-              hasVariant(globalVariants, "screen", "mobileOnly")
+              hasVariant(globalVariants, "screen", "tabletsOnly")
                 ? ["flatRight"]
                 : ["flatRight"]
             }

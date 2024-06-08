@@ -89,7 +89,7 @@ export default function GlobalContextsProvider(props) {
       themeStyles={
         antdConfigProviderProps && "themeStyles" in antdConfigProviderProps
           ? antdConfigProviderProps.themeStyles
-          : hasVariant(globalVariants, "screen", "mobileOnly")
+          : hasVariant(globalVariants, "screen", "tabletsOnly")
           ? {
               fontFamily: "Montserrat",
               fontSize: "16px",

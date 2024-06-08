@@ -521,7 +521,7 @@ function PlasmicPriceCard__RenderFunc(props) {
             ? true
             : hasVariant($state, "primary", "primary")
             ? true
-            : hasVariant(globalVariants, "screen", "mobileOnly")
+            : hasVariant(globalVariants, "screen", "tabletsOnly")
             ? true
             : false
         ) ? (
@@ -703,7 +703,7 @@ function PlasmicPriceCard__RenderFunc(props) {
                 displayMinHeight={"0"}
                 displayMinWidth={"0"}
                 displayWidth={
-                  hasVariant(globalVariants, "screen", "mobileOnly")
+                  hasVariant(globalVariants, "screen", "tabletsOnly")
                     ? "16px"
                     : "24px"
                 }

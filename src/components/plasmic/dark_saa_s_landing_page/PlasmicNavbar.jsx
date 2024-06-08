@@ -77,7 +77,7 @@ function PlasmicNavbar__RenderFunc(props) {
           data-plasmic-override={overrides.opik}
           className={classNames("__wab_instance", sty.opik)}
           smallLogo={
-            hasVariant(globalVariants, "screen", "mobileOnly")
+            hasVariant(globalVariants, "screen", "tabletsOnly")
               ? undefined
               : undefined
           }

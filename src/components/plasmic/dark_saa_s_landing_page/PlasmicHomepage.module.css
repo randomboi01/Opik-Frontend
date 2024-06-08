@@ -588,7 +588,14 @@
 }
 .carousel:global(.__wab_instance):global(.__wab_instance) {
   position: relative;
+  transition-property: all;
+  transition-duration: 1s;
+  left: auto;
+  top: auto;
+  align-self: stretch;
   flex-shrink: 0;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 1s;
 }
 @media (min-width: 0px) and (max-width: 930px) {
   .carousel:global(.__wab_instance):global(.__wab_instance) {
@@ -670,7 +677,7 @@
   height: auto;
   max-width: 1440px;
   min-width: 0;
-  padding: 278px 0px 0px;
+  padding: 95px 0px 0px;
 }
 @media (min-width: 0px) and (max-width: 930px) {
   .freeBox__e1Drr {

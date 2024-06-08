@@ -106,7 +106,7 @@ function PlasmicDetailAbout__RenderFunc(props) {
                 sty.h5
               )}
             >
-              {hasVariant(globalVariants, "screen", "mobileOnly")
+              {hasVariant(globalVariants, "screen", "tabletsOnly")
                 ? "Lorem ipsum sit amet"
                 : "Lorem ipsum sit amet"}
             </h5>

@@ -77,7 +77,7 @@ function PlasmicDiagramCard__RenderFunc(props) {
             sty.h5
           )}
         >
-          {hasVariant(globalVariants, "screen", "mobileOnly")
+          {hasVariant(globalVariants, "screen", "tabletsOnly")
             ? "Lorem Ipsum"
             : "Lorem Ipsum"}
         </h5>
@@ -90,7 +90,7 @@ function PlasmicDiagramCard__RenderFunc(props) {
             sty.text
           )}
         >
-          {hasVariant(globalVariants, "screen", "mobileOnly")
+          {hasVariant(globalVariants, "screen", "tabletsOnly")
             ? "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed "
             : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed "}
         </div>

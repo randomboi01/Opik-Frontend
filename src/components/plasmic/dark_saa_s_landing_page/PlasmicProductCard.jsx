@@ -77,7 +77,9 @@ function PlasmicProductCard__RenderFunc(props) {
           displayHeight={"auto"}
           displayMaxHeight={"none"}
           displayMaxWidth={
-            hasVariant(globalVariants, "screen", "mobileOnly") ? "50px" : "100%"
+            hasVariant(globalVariants, "screen", "tabletsOnly")
+              ? "50px"
+              : "100%"
           }
           displayMinHeight={"0"}
           displayMinWidth={"0"}
@@ -101,7 +103,7 @@ function PlasmicProductCard__RenderFunc(props) {
             sty.h3
           )}
         >
-          {hasVariant(globalVariants, "screen", "mobileOnly")
+          {hasVariant(globalVariants, "screen", "tabletsOnly")
             ? "Lorem ipsum dolor sit amet"
             : "Lorem ipsum dolor sit amet"}
         </h3>
@@ -114,7 +116,7 @@ function PlasmicProductCard__RenderFunc(props) {
             sty.text
           )}
         >
-          {hasVariant(globalVariants, "screen", "mobileOnly")
+          {hasVariant(globalVariants, "screen", "tabletsOnly")
             ? "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
             : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
         </div>
