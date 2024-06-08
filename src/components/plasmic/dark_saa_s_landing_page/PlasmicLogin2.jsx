@@ -146,7 +146,7 @@ function PlasmicLogin2__RenderFunc(props) {
             {...child$Props}
           >
             <FormItemWrapper
-              className={classNames("__wab_instance", sty.formField__mn3N5)}
+              className={classNames("__wab_instance", sty.formField___20BH)}
               label={"Email"}
               name={"email"}
               valuePropName={``}
@@ -154,7 +154,7 @@ function PlasmicLogin2__RenderFunc(props) {
               <AntdInput className={classNames("__wab_instance", sty.input)} />
             </FormItemWrapper>
             <FormItemWrapper
-              className={classNames("__wab_instance", sty.formField__lWyac)}
+              className={classNames("__wab_instance", sty.formField___09K4G)}
               label={"Password"}
               name={"password"}
             >
