@@ -44,8 +44,11 @@
   }
 }
 .navbar:global(.__wab_instance) {
-  width: 100%;
-  min-width: 0;
+  width: 100vw;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+  position: sticky;
 }
 .freeBox___6Sj6T {
   display: flex;

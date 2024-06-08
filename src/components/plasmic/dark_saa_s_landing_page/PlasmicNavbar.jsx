@@ -106,10 +106,22 @@ function PlasmicNavbar__RenderFunc(props) {
             }
             submitsForm={true}
           >
-            {"Product"}
+            <div
+              data-plasmic-name={"productDescription"}
+              data-plasmic-override={overrides.productDescription}
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.productDescription
+              )}
+            >
+              {"Product"}
+            </div>
           </Button>
           <Button
-            className={classNames("__wab_instance", sty.button__yzeFr)}
+            data-plasmic-name={"purchaseProduct"}
+            data-plasmic-override={overrides.purchaseProduct}
+            className={classNames("__wab_instance", sty.purchaseProduct)}
             color={"navLink"}
             endIcon={
               <svg
@@ -126,10 +138,20 @@ function PlasmicNavbar__RenderFunc(props) {
             }
             submitsForm={true}
           >
-            {"Purchase"}
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__wSpz9
+              )}
+            >
+              {"Purchase"}
+            </div>
           </Button>
           <Button
-            className={classNames("__wab_instance", sty.button__oVpKi)}
+            data-plasmic-name={"accomplishments"}
+            data-plasmic-override={overrides.accomplishments}
+            className={classNames("__wab_instance", sty.accomplishments)}
             color={"navLink"}
             endIcon={
               <svg
@@ -146,7 +168,15 @@ function PlasmicNavbar__RenderFunc(props) {
             }
             submitsForm={true}
           >
-            {"Accomplishments"}
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__dK8AJ
+              )}
+            >
+              {"Accomplishments"}
+            </div>
           </Button>
           <Button
             data-plasmic-name={"contactUs"}
@@ -191,7 +221,7 @@ function PlasmicNavbar__RenderFunc(props) {
                 role={"img"}
               />
             }
-            link={"#"}
+            link={`/new-page`}
             startIcon={
               <svg
                 className={classNames(projectcss.all, sty.svg__gZr90)}
@@ -200,7 +230,15 @@ function PlasmicNavbar__RenderFunc(props) {
             }
             submitsForm={true}
           >
-            {"Log in"}
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text___4IrJz
+              )}
+            >
+              {"Log in"}
+            </div>
           </Button>
           <Button
             className={classNames("__wab_instance", sty.button__nPneo)}
@@ -221,12 +259,10 @@ function PlasmicNavbar__RenderFunc(props) {
             submitsForm={true}
           >
             <div
-              data-plasmic-name={"text"}
-              data-plasmic-override={overrides.text}
               className={classNames(
                 projectcss.all,
                 projectcss.__wab_text,
-                sty.text
+                sty.text__mNzl1
               )}
             >
               {"Register"}
@@ -239,11 +275,22 @@ function PlasmicNavbar__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "opik", "contactUs", "contactUs2", "text"],
+  root: [
+    "root",
+    "opik",
+    "productDescription",
+    "purchaseProduct",
+    "accomplishments",
+    "contactUs",
+    "contactUs2"
+  ],
+
   opik: ["opik"],
+  productDescription: ["productDescription"],
+  purchaseProduct: ["purchaseProduct"],
+  accomplishments: ["accomplishments"],
   contactUs: ["contactUs", "contactUs2"],
-  contactUs2: ["contactUs2"],
-  text: ["text"]
+  contactUs2: ["contactUs2"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -279,9 +326,11 @@ export const PlasmicNavbar = Object.assign(
   {
     // Helper components rendering sub-elements
     opik: makeNodeComponent("opik"),
+    productDescription: makeNodeComponent("productDescription"),
+    purchaseProduct: makeNodeComponent("purchaseProduct"),
+    accomplishments: makeNodeComponent("accomplishments"),
     contactUs: makeNodeComponent("contactUs"),
     contactUs2: makeNodeComponent("contactUs2"),
-    text: makeNodeComponent("text"),
     // Metadata about props expected for PlasmicNavbar
     internalVariantProps: PlasmicNavbar__VariantProps,
     internalArgProps: PlasmicNavbar__ArgProps

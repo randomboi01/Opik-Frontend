@@ -694,6 +694,59 @@
           "cssFilePath": "plasmic/dark_saa_s_landing_page/PlasmicCarousel.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "YidwpCLPrIIe",
+          "name": "Login",
+          "type": "managed",
+          "projectId": "9WZxc9ETCwDp4rSGaS5CbS",
+          "renderModuleFilePath": "plasmic/dark_saa_s_landing_page/PlasmicLogin.jsx",
+          "importSpec": {
+            "modulePath": "Login.jsx"
+          },
+          "cssFilePath": "plasmic/dark_saa_s_landing_page/PlasmicLogin.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/new-page"
+        },
+        {
+          "id": "y5pZtcVsBZ6W",
+          "name": "Login2",
+          "type": "managed",
+          "projectId": "9WZxc9ETCwDp4rSGaS5CbS",
+          "renderModuleFilePath": "plasmic/dark_saa_s_landing_page/PlasmicLogin2.jsx",
+          "importSpec": {
+            "modulePath": "Login2.jsx"
+          },
+          "cssFilePath": "plasmic/dark_saa_s_landing_page/PlasmicLogin2.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "eAzPK-xaaIOB",
+          "name": "Footer2",
+          "type": "managed",
+          "projectId": "9WZxc9ETCwDp4rSGaS5CbS",
+          "renderModuleFilePath": "plasmic/dark_saa_s_landing_page/PlasmicFooter2.jsx",
+          "importSpec": {
+            "modulePath": "Footer2.jsx"
+          },
+          "cssFilePath": "plasmic/dark_saa_s_landing_page/PlasmicFooter2.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "lnR5QM188Nfg",
+          "name": "Navbar2",
+          "type": "managed",
+          "projectId": "9WZxc9ETCwDp4rSGaS5CbS",
+          "renderModuleFilePath": "plasmic/dark_saa_s_landing_page/PlasmicNavbar2.jsx",
+          "importSpec": {
+            "modulePath": "Navbar2.jsx"
+          },
+          "cssFilePath": "plasmic/dark_saa_s_landing_page/PlasmicNavbar2.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -960,6 +1013,28 @@
           "name": "Fetcher",
           "displayName": "plasmic-data-source-fetcher",
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ],
+      "customFunctions": []
+    },
+    {
+      "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
+      "projectApiToken": "uZp069FLSLNVA2dpWnqC3BUaj3flvtNBNXt6e1b67rm4Uh6lGHgYJ65FCBXlOFTB5KDW7RmmOxIAzgHYCg",
+      "projectName": "plasmic-nav",
+      "version": ">0.0.0",
+      "cssFilePath": "plasmic/plasmic_nav/plasmic.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "jGx9tiKJoex",
+          "name": "NavigationBar",
+          "displayName": "hostless-plasmic-navigation-bar",
+          "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
       ],
       "customFunctions": []

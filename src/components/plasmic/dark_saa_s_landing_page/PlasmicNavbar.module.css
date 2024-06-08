@@ -147,13 +147,16 @@
   position: relative;
   object-fit: cover;
 }
+.productDescription {
+  color: #1c1c1c;
+}
 .svg__dkGwl {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
 }
-.button__yzeFr:global(.__wab_instance) {
+.purchaseProduct:global(.__wab_instance) {
   position: relative;
 }
 .svg__cQjMg {
@@ -162,13 +165,16 @@
   position: relative;
   object-fit: cover;
 }
+.text__wSpz9 {
+  color: #1c1c1c;
+}
 .svg__dyvna {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
 }
-.button__oVpKi:global(.__wab_instance) {
+.accomplishments:global(.__wab_instance) {
   position: relative;
 }
 .svg__gj66Z {
@@ -176,6 +182,9 @@
   height: 24px;
   position: relative;
   object-fit: cover;
+}
+.text__dK8AJ {
+  color: #1c1c1c;
 }
 .svg__w1QaT {
   width: 24px;
@@ -191,6 +200,9 @@
   height: 24px;
   position: relative;
   object-fit: cover;
+}
+.contactUs2 {
+  color: #1c1c1c;
 }
 .svg__yAo9K {
   width: 24px;
@@ -214,6 +226,9 @@
   position: relative;
   object-fit: cover;
 }
+.text___4IrJz {
+  color: #1c1c1c;
+}
 .svg__qjLpC {
   width: 24px;
   height: 24px;
@@ -230,7 +245,7 @@
   position: relative;
   object-fit: cover;
 }
-.text {
+.text__mNzl1 {
   font-style: italic;
 }
 .svg__oCK {
