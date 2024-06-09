@@ -57,6 +57,7 @@
   margin-right: 0px;
   transition-property: all;
   transition-duration: 1s;
+  overflow: hidden;
   flex-shrink: 0;
   -webkit-transition-property: all;
   -webkit-transition-duration: 1s;
