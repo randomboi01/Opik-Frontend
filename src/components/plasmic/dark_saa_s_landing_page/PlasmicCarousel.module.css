@@ -6,6 +6,7 @@
   transition-property: all;
   transition-duration: 1s;
   transform: translateX(0px) translateY(-60px) translateZ(0px);
+  flex-shrink: 0;
   -webkit-transition-property: all;
   -webkit-transition-duration: 1s;
 }
@@ -138,7 +139,11 @@
   object-fit: cover;
   max-width: 100%;
   height: 368px;
+  transition-property: all;
+  transition-duration: 1s;
   flex-shrink: 0;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 1s;
 }
 .img__lrEdn > picture > img {
   object-fit: cover;

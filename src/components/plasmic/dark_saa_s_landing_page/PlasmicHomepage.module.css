@@ -591,11 +591,13 @@
 }
 .carousel:global(.__wab_instance):global(.__wab_instance) {
   position: relative;
+  width: 100%;
   transition-property: all;
   transition-duration: 1s;
   left: auto;
   top: auto;
   align-self: stretch;
+  max-width: 100%;
   flex-shrink: 0;
   -webkit-transition-property: all;
   -webkit-transition-duration: 1s;
